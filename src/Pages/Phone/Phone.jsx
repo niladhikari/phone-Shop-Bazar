@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import PhoneCard from "./PhoneCard";
 
 
 const Phone = () => {
@@ -15,7 +16,7 @@ const Phone = () => {
     
     return (
         <div>
-            <h2>Phone:{phone.id}</h2>
+            <PhoneCard phone={phone}></PhoneCard>
         </div>
     );
 };
