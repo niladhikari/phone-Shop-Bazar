@@ -1,9 +1,11 @@
-import { useLoaderData } from "react-router-dom";
+// import { useLoaderData } from "react-router-dom";
 import Banner from "../../Components/Header/Banner/Banner";
 import Phones from "./../../Components/Phones/Phones";
+import useGetPhones from './../../Hook/useGetPhones';
 
 const Home = () => {
-  const phones = useLoaderData();
+  // const phones = useLoaderData();
+  const [phones] = useGetPhones()
   return (
     <div>
       <Banner></Banner>
